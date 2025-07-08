@@ -1,22 +1,37 @@
-#include <stdio.h>
-int main()
-{
-int A4sheet=40;
-int Pen=20;
-int Pencil=10;
-int Eraser=5;
-printf("Items Details\n");
-printf("A4sheet:%d\n",A4sheet);
-printf("Pen:%d\n",Pen);
-printf("Pencil:%d\n",Pencil);
-printf("Eraser:%d\n",Eraser);
-return 0;
+include <stdio.h>
+int main() {
+    int a4sheet, pen, pencil, eraser;
+    // Read the costs of items
+    scanf("%d %d %d %d", &a4sheet, &pen, &pencil, &eraser);
+    // Display the price list
+    printf("Items Details\n");
+    printf("A4sheet:%d\n", a4sheet);
+    printf("Pen:%d\n", pen);
+    printf("Pencil:%d\n", pencil);
+    printf("Eraser:%d\n", eraser);
+    return 0;
 }
 
-    
+       
 
+       
 
-    
+       
 
+       
 
+       
 
+       
+
+       
+
+       
+
+       
+
+       
+
+       
+
+       
