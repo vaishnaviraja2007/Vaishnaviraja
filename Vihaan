@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+
+    double base, height, side1, side2, side3;
+
+    // Read the input values
+
+    scanf("%lf %lf %lf %lf %lf", &base, &height, &side1, &side2, &side3);
+
+    // Calculate the area and perimeter
+
+    double area = 0.5 * base * height;
+
+    double perimeter = side1 + side2 + side3;
+
+    // Display the results
+
+    printf("Area of Triangle is %.2lf\n", area);
+
+    printf("Perimeter of Triangle is %.2lf\n", perimeter);
+
+    return 0;
+
+}
