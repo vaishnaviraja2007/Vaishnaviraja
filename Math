@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+#include <math.h>
+
+int main() {
+
+    double floatValue;
+
+    int squareValue, baseValue, powerValue;
+
+    // Read the input values
+
+    scanf("%lf %d %d %d", &floatValue, &squareValue, &baseValue, &powerValue);
+
+    // Calculate the math functions
+
+    double floorValue = floor(floatValue);
+
+    double ceilValue = ceil(floatValue);
+
+    double sqrtValue = sqrt(squareValue);
+
+    double powValue = pow(baseValue, powerValue);
+
+    // Display the results
+
+    printf("%.0lf\n", floorValue);
+
+    printf("%.0lf\n", ceilValue);
+
+    printf("%.0lf\n", sqrtValue);
+
+    printf("%.0lf\n", powValue);
+
+    return 0;
+
+}
