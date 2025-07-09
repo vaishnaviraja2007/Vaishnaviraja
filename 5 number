@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+#include <string.h>
+
+#include <math.h>
+
+#include <stdlib.h>
+
+int main() {
+
+    double num1, num2, num3, num4, num5;
+
+    // Read the input values
+
+    scanf("%lf %lf %lf %lf %lf", &num1, &num2, &num3, &num4, &num5);
+
+    // Calculate the sum and average
+
+    double sum = num1 + num2 + num3 + num4 + num5;
+
+    double average = sum / 5.0;
+
+    // Display the results
+
+    printf("Sum of the 5 number is : %.0lf\n", sum);
+
+    printf("Average of the 5 number is : %.1lf\n", average);
+
+    return 0;
+
+}
+
