@@ -1,0 +1,35 @@
+#include <stdio.h>
+int main() {
+    double num1, num2;
+    char operator;
+    scanf("%lf %lf %c", &num1, &num2, &operator);
+    switch (operator) {
+        case '+':
+            printf("Addition of two number is %.1f\n", num1 + num2);
+            break;
+        case '-':
+            printf("Subtraction of two number is %.1f\n", num1 - num2);
+            break;
+        case '*':
+            printf("Multiplication of two number is %.1f\n", num1 * num2);
+            break;
+        case '/':
+            if (num2 != 0) {
+                printf("Division of two number is %.1f\n", num1 / num2);
+            } else {
+                printf("Invalid Input\n");
+            }
+            break;
+        case '%':
+            if (num2 != 0) {
+                printf("Modulo of two number is %.0f\n", (double)((int)num1 % (int)num2));
+            } else {
+                printf("Invalid Input\n");
+            }
+            break;
+        default:
+            printf("Invalid Input\n");
+            break;
+    }
+    return 0;
+}
