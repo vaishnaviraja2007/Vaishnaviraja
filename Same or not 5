@@ -1,0 +1,25 @@
+#include <stdio.h>
+int main() {
+    int n;
+    scanf("%d", &n);
+    int arr[n];
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+    int isEven = 1, isOdd = 1;
+    for (int i = 0; i < n; i++) {
+        if (arr[i] % 2 == 0) {
+            isOdd = 0;
+        } else {
+            isEven = 0;
+        }
+    }
+    if (isEven) {
+        printf("Even\n");
+    } else if (isOdd) {
+        printf("Odd\n");
+    } else {
+        printf("Mixed\n");
+    }
+    return 0;
+}
