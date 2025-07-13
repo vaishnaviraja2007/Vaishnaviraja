@@ -1,0 +1,45 @@
+#include <stdio.h>
+
+int main() {
+
+    int num;
+
+    scanf("%d", &num);
+
+
+
+    int temp = num, count = 0;
+
+    while (temp > 0) {
+
+        temp /= 10;
+
+        count++;
+
+    }
+
+    if (count == 1) {
+
+        printf("STDOUT\n");
+
+    } else {
+
+
+
+        while (num >= 100) {
+
+            num /= 10;
+
+        }
+
+        int tens = num / 10;
+
+        int units = num % 10;
+
+        printf("%d%d\n", units, tens);
+
+    }
+
+    return 0;
+
+}
