@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main() {
+
+    int pizzas, puffs, coolDrinks;
+
+
+
+    scanf("%d %d %d", &pizzas, &puffs, &coolDrinks);
+
+
+
+    int totalPrice = pizzas * 100 + puffs * 20 + coolDrinks * 10;
+
+
+
+    printf("Bill Details\n");
+
+    printf("No of pizzas:%d\n", pizzas);
+
+    printf("No of puffs:%d\n", puffs);
+
+    printf("No of cooldrinks:%d\n", coolDrinks);
+
+    printf("Total price=%d\n", totalPrice);
+
+    printf("ENJOY THE SHOW!!!\n");
+
+    return 0;
+
+}
