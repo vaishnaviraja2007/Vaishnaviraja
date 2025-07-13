@@ -1,0 +1,45 @@
+#include <stdio.h>
+
+int main() {
+
+    double liters, distance;
+
+
+
+    scanf("%lf", &liters);
+
+
+
+    scanf("%lf", &distance);
+
+    if (liters <= 0 || distance <= 0) {
+
+        printf("Invalid Input\n");
+
+        return 0;
+
+    }
+
+
+
+    double liters_per_100km = (liters / distance) * 100;
+
+
+
+    double miles = distance * 0.6214;
+
+
+
+    double gallons = liters * 0.2642;
+
+
+
+    double miles_per_gallon = miles / gallons;
+
+    printf("Liters/100KM\n%.2lf\n", liters_per_100km);
+
+    printf("Miles/gallons\n%.2lf\n", miles_per_gallon);
+
+    return 0;
+
+}
