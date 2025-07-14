@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    int n, i, value;
+    int pos_count = 0, neg_count = 0;
+
+    scanf("%d", &n);
+
+    for (i = 0; i < n; i++) {
+        scanf("%d", &value);
+        if (value > 0) {
+            pos_count++;
+        } else if (value < 0) {
+            neg_count++;
+        }
+    }
+
+    printf("Count of Positive Integer is %.2f\n", (float)pos_count);
+    printf("Count of Negative Integer is %.2f\n", (float)neg_count);
+
+    return 0;
+}
