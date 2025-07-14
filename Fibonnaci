@@ -1,0 +1,41 @@
+#include <stdio.h>
+
+int main() {
+
+    int n, m, a = 0, b = 1, fib, sum = 0;
+
+    scanf("%d %d", &n, &m);
+
+    if (n < 1 || n > 20 || m < 1 || m > 20 || n > m) {
+
+        printf("Invalid Input\n");
+
+        return 0;
+
+    }
+
+    int i = 1;
+
+    while (i <= m) {
+
+        if (i >= n) {
+
+            sum += a;
+
+        }
+
+        fib = a + b;
+
+        a = b;
+
+        b = fib;
+
+        i++;
+
+    }
+
+    printf("The Sum of Fibonacci value is %.1f\n", (float)sum);
+
+    return 0;
+
+}
